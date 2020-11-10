@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon game type (but ver.1.5 & ver.2.0)</title>
+  <link rel="stylesheet" href="css/introcss.css">
+
+  <!-- googlefonts -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+  <!-- font awesome link -->
+  <script src="https://kit.fontawesome.com/904a7d5ff1.js" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".about-game").click(function() {
+        $(".about-game-div").slideToggle(1000);
+      });
+      $(".close-about-game").click(function() {
+        $(".about-game-div").slideUp(1000);
+      });
+      $(".show-mychelf-less").click(function() {
+        $(".mychelf-less").slideToggle(1000);
+      });
+      $(".close-btn-less").click(function() {
+        $(".mychelf-less").slideUp(1000);
+      });
+      $(".show-mychelf-more").click(function() {
+        $(".mychelf-more").slideToggle(1000);
+      });
+      $(".close-btn-more").click(function() {
+        $(".mychelf-more").slideUp(1000);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="about-game-div">
+    <a class="close-about-game">close</a>
+    <p>The games are similar to the simon game but not same.<br>You can read the instructions for the games in the game itself.<br>Happy Gaming!! </p>
+  </div>
+  <a href="#" class="about-game btn">About the game</a>
+  <p>"Simon Game", but the pattern changes each time you complete a level!! </p>
+  <a class="btn" href="lvlup.html" target="_blank">Have Fun!!</a>
+  <p>Be the Boss!! Select your own length of pattern!!</p>
+  <a class="btn" href="ownlvl.html" target="_blank">Have Fun!!</a>
+  <p></p>
+  <div class="mychelf-less">
+    <a class="close-btn-less">close</a>
+    <p>Hi..I'm Mohith Gupta.<br>And...that's a bit (or a byte) about myself.<br>Happy Gaming..!!</p>
+  </div>
+  <p>To know a byte about Me..</p>
+  <a class="btn show-mychelf-less">Mychelf...</a>
+  <p></p>
+  <div class="mychelf-more">
+    <a class="close-btn-more">close</a>
+    <p>Hi..I'm Mohith Gupta, 19 years young. Yes!! "young" not "old".<br>
+      I wanna become a Millionaire or.. becoming a Billionaire would be fine too. I don't mind.<br>
+      I was just kidding..!! But it would be great if I can become one (I prefer the latter. You?) <br>
+      By the way, I wish to become a Full Stack web developer. I'm on a journey to make that dream come true.<br>
+      You can reach me at : </p>
+    <div class="social-media">
+      <a href="https://twitter.com/tobeawebdev" target="_blank"><i class="fa fa-twitter"></i></i></a>
+      <a href="https://www.instagram.com/mohithguptakorangi" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="mailme.html"><i class="fa fa-envelope" target="_blank"></i></a>
+    </div>
+  </div>
+  <p>To know a kilo-byte about Me..</p>
+  <a class="btn show-mychelf-more">More Mychelf..</a>
+
+  <div class="copyright">
+    Copyright &copy; Mohith Gupta 2020. All rights reserved.
+    <p><a href="https://mohithgupta.github.io/" target="_blank">Made by - <b>Mohith Gupta</b></a></p>
+  </div>
+
+</body>
+
+</html>

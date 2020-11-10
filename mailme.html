@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MAIL ME</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <style media="screen">
+    body {
+      font-family: Rowdies, cursive;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #fff;
+      background: #ff6c68;
+    }
+
+    form {
+      width: 40%;
+      border: solid #000 2px;
+      margin: 5% auto;
+      padding: 2% 0 1%;
+      overflow: hidden;
+      background: #000;
+    }
+
+    legend {
+      margin-bottom: 3%;
+    }
+
+    .subject-label {
+      margin-top: 2%;
+    }
+
+    .input-subject {
+      height: 40px;
+      margin-top: -0.5%;
+    }
+
+    input {
+      margin: 3% auto;
+    }
+
+    .textarea {
+      height: 150px;
+      resize: none;
+      overflow: auto;
+    }
+
+    .contact-btn {
+      margin: 4% 0 5% 0;
+      padding: 1%;
+      color: #fff;
+      background: #696969;
+      font-size: 1.2em;
+    }
+
+    .contact-btn:hover {
+      transition: 0.3s;
+      color: #000;
+      cursor: pointer;
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <form action="mailto:mohithguptak@gmail.com" method="GET" target="_blank" id="mailme">
+    <fieldset>
+      <legend class="title">You Can Mail Me here :</legend>
+      <div class="field">
+        <label class="subject-label" for="subject">Subject</label><br />
+        <input name="subject" id="subject" type="text" class="input-subject" placeholder="Subject Text">
+      </div>
+      <div class="field">
+        <label class="label" for="body">Body</label><br />
+        <textarea class="textarea" name="body" id="body" placeholder="Body Text"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Create Email" class="contact-btn">
+      </div>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

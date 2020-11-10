@@ -1,0 +1,168 @@
+body {
+  text-align: center;
+  background-color: #6e6d6d;
+  line-height: 400%;
+}
+
+.mobile-users{
+  display:none;
+}
+h1,.show-instructions{
+  letter-spacing: 1.3px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin: 3% 0 1%;
+  color: #fff;
+}
+
+.show-instructions{
+  margin: 0;
+  font-size: 1rem;
+}
+
+.show-instructions:hover,.close-instructions:hover{
+  cursor: pointer;
+}
+.instructions {
+  font-size: 1.3rem;
+  padding: 0 1% 1%;
+  display: none;  /* due to this instructions aren't visible at first*/
+}
+li::before{
+  content: none;
+}
+.letmeknow-cheats{
+  text-decoration: none;
+  color: #fff;
+}
+
+.close-instructions{
+  color: #fff;
+}
+.close-instructions:hover,.show-instructions:hover,.letmeknow-cheats:hover{
+  color: #000;
+}
+.container {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.btn {
+  margin: 10px 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 9px solid rgba(211,211,211,0.6);
+  border-radius: 23%;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.btn:active{
+  border-color: rgba(211,211,211,1);
+  box-shadow: 0 0 20px white;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.darkgrey {
+  background-color: #1a1a2e;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  border-color: rgba(211,211,211,1);
+}
+.copyright {
+	padding-right:  10px ;
+	color: #00121b;
+  float: left;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6rem;
+  position: absolute;
+  right: 0;
+}
+.copyright p a{
+	text-decoration: none;
+		color: #fff ;
+    border: none;
+    font-size: 0.8rem;
+}
+.copyright p a:hover{
+	color:#00121b;
+	cursor: pointer;
+}
+.start-btn{
+  display: none;
+  background: none;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  color: #fff;
+border: 3px solid #fff;
+  border-radius: 30px;
+    text-decoration: none;
+}
+.start-btn:hover{
+  background: #999;
+  cursor: pointer;
+}
+.start-btn:active{
+  background: #777;
+}
+
+
+/* change */
+@media screen and (max-width:670px) {
+  body {
+    line-height: 300%;
+  }
+  .start-btn{
+    display: block;
+  }
+  .pc-users{
+    display: none;
+  }
+  .mobile-users{
+    display: block;
+  }
+  .show-instructions{
+    font-size: 0.8rem;
+  }
+  .instructions{
+    font-size: 1rem;
+    margin-left: -10%;
+  }
+  .btn {
+    width: 100px;
+    height:100px;
+    border-width: 6px;
+  }
+}
+
+@media screen and (max-width:375px){
+
+  .btn {
+    width: 70px;
+    height:70px;
+    margin: 10px 15px;
+    border-width: 4px ;
+  }
+}

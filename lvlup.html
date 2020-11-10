@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon game type 2</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 class="pc-users">Hit Spacebar to start the Game</h1>
+  <h1 class="mobile-users">Press the button below to start the Game</h1>
+
+  <a href="#" class="start-btn">Start the pattern</a>
+
+  <span class="show-instructions">click me to read the instructions</span>
+  <div class="instructions">
+    <ol>
+      <span>You have to copy the same pattern which is generated below. The length of the generated pattern is equal to your level.</span><br>
+      <span>Start clicking after the generated pattern ends. Your pattern recording starts only after the generated pattern ends!!</span><br>
+      <span>I have taken care of all the cheats that can occur 😎. If you find some more, let me know <a href="mailme.html" class="letmeknow-cheats" target="_blank">here</a>. </span><br>
+      <span>You can use the keyboard keys(for pc fellas,obvious right?) => b(blue), g(green), d(darkgrey), r(red).</span><br>
+      <span>You can refresh the page anytime, to start over.</span><br>
+      <span class="close-instructions">click me to close the instructions.</span>
+    </ol>
+  </div>
+
+  <div class="container">
+
+    <div lass="row">
+
+      <div type="button" id="blue" class="btn blue b"> </div>
+      <div type="button" id="green" class="btn green g"> </div>
+
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="darkgrey" class="btn darkgrey d"> </div>
+      <div type="button" id="red" class="btn red r"> </div>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    Copyright &copy; Mohith Gupta 2020. All rights reserved.
+    <p><a href="https://mohithgupta.github.io/" target="_blank">Made by Mohith Gupta</a></p>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/lvlup.js" charset="utf-8"></script>
+
+</body>
+
+</html>
