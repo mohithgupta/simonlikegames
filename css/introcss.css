@@ -79,9 +79,9 @@ a:hover{
 .copyright {
   margin-top: 20px;
 	padding-right:  10px ;
-	color: #00121b;
+	color: #fff;
   font-family: monospace;
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: absolute;
   right: 0;
 }
@@ -93,6 +93,5 @@ a:hover{
     font-size: 0.9rem;
 }
 .copyright p a:hover{
-	color:#00121b;
 	cursor: pointer;
 }
